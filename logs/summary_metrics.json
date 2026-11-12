@@ -1,0 +1,43 @@
+{
+  "dateExecution": "2026-11-12T17:30:55.398562600Z",
+  "nombreTotalEssais": 40,
+  "sansMapeK": {
+    "n": 10,
+    "mttrMoyenMs": 35306,
+    "mttrMoyenSec": 35.31,
+    "mttrEcartTypeMs": 3219,
+    "mttrEcartTypeSec": 3.22,
+    "mttrMinSec": 30.81,
+    "mttrMaxSec": 39.31,
+    "tauxDetectionSous15sPourcent": 0.0,
+    "fauxPositifs": 0
+  },
+  "avecMapeKCrash": {
+    "n": 10,
+    "mttrMoyenMs": 9673,
+    "mttrMoyenSec": 9.67,
+    "mttrEcartTypeMs": 554,
+    "mttrEcartTypeSec": 0.55,
+    "mttrMinSec": 8.84,
+    "mttrMaxSec": 10.47,
+    "tauxDetectionSous15sPourcent": 100.0,
+    "fauxPositifs": 0
+  },
+  "avecMapeKDegradation": {
+    "n": 5,
+    "mttrMoyenMs": 8697,
+    "mttrMoyenSec": 8.7,
+    "mttrEcartTypeMs": 566,
+    "mttrEcartTypeSec": 0.57,
+    "mttrMinSec": 8.08,
+    "mttrMaxSec": 9.49,
+    "tauxDetectionSous15sPourcent": 100.0,
+    "fauxPositifs": 0
+  },
+  "gainMttrFacteur": 3.6,
+  "reductionMttrPourcent": 72.6,
+  "overheadCpuPourcent": 1.4,
+  "overheadMemoireMo": 28,
+  "fauxPositifsN1Pourcent": 100.0,
+  "fauxPositifsN2Pourcent": 0.0
+}

@@ -1,0 +1,27 @@
+id,timestamp,phase,service,symptome,action,details,dureeMs,succes
+7,1794506980170,EXECUTE,calc,,REDEMARRER,"Echec du redemarrage (timeout 10 s)",10028,false
+8,1794506990388,EXECUTE,storage,,REDEMARRER,"Echec du redemarrage (timeout 10 s)",10216,false
+9,1794507000619,EXECUTE,notif,,REDEMARRER,"Echec du redemarrage (timeout 10 s)",10229,false
+16,1794507010815,EXECUTE,calc,,REDEMARRER,"Echec du redemarrage (timeout 10 s)",10194,false
+17,1794507020978,EXECUTE,storage,,REDEMARRER,"Echec du redemarrage (timeout 10 s)",10163,false
+18,1794507031207,EXECUTE,notif,,REDEMARRER,"Echec du redemarrage (timeout 10 s)",10226,false
+25,1794507041456,EXECUTE,calc,,REDEMARRER,"Echec du redemarrage (timeout 10 s)",10246,false
+26,1794507051665,EXECUTE,storage,,REDEMARRER,"Echec du redemarrage (timeout 10 s)",10209,false
+27,1794507061838,EXECUTE,notif,,REDEMARRER,"Echec du redemarrage (timeout 10 s)",10170,false
+7,1794508838369,EXECUTE,calc,,REDEMARRER,"Echec du redemarrage (timeout 10 s)",10250,false
+8,1794508848600,EXECUTE,storage,,REDEMARRER,"Echec du redemarrage (timeout 10 s)",10230,false
+9,1794508858812,EXECUTE,notif,,REDEMARRER,"Echec du redemarrage (timeout 10 s)",10211,false
+16,1794508869057,EXECUTE,calc,,REDEMARRER,"Echec du redemarrage (timeout 10 s)",10241,false
+17,1794508879164,EXECUTE,storage,,REDEMARRER,"Echec du redemarrage (timeout 10 s)",10107,false
+18,1794508889347,EXECUTE,notif,,REDEMARRER,"Echec du redemarrage (timeout 10 s)",10182,false
+25,1794508899602,EXECUTE,calc,,REDEMARRER,"Echec du redemarrage (timeout 10 s)",10251,false
+26,1794508909798,EXECUTE,storage,,REDEMARRER,"Echec du redemarrage (timeout 10 s)",10196,false
+27,1794508920044,EXECUTE,notif,,REDEMARRER,"Echec du redemarrage (timeout 10 s)",10244,false
+34,1794508930257,EXECUTE,calc,,REDEMARRER,"Echec du redemarrage (timeout 10 s)",10210,false
+35,1794508940410,EXECUTE,storage,,REDEMARRER,"Echec du redemarrage (timeout 10 s)",10151,false
+36,1794508950575,EXECUTE,notif,,REDEMARRER,"Echec du redemarrage (timeout 10 s)",10164,false
+43,1794508960741,EXECUTE,calc,,REDEMARRER,"Echec du redemarrage (timeout 10 s)",10164,false
+44,1794508970997,EXECUTE,storage,,REDEMARRER,"Echec du redemarrage (timeout 10 s)",10256,false
+45,1794508981230,EXECUTE,notif,,REDEMARRER,"Echec du redemarrage (timeout 10 s)",10232,false
+52,1794508991464,EXECUTE,calc,,REDEMARRER,"Echec du redemarrage (timeout 10 s)",10232,false
+53,1794509001675,EXECUTE,storage,,REDEMARRER,"Echec du redemarrage (timeout 10 s)",10210,false
