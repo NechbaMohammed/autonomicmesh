@@ -1,0 +1,10 @@
+target/
+report/
+DESIGN.md
+run/
+logs/*.log
+node_modules/
+*.iml
+.idea/
+.vscode/
+*.log
