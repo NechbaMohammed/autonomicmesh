@@ -1,0 +1,59 @@
+// mesh.proto -- contrat commun des micro-services AutonomicMesh.
+syntax = "proto3";
+
+package mesh;
+
+option java_package = "ca.usherbrooke.ift605.mesh.proto";
+option java_outer_classname = "MeshProto";
+
+// --- Etat de sante (enum plutot que string : pas de faute de frappe possible) ---
+enum Status {
+  SERVING  = 0;  // nominal
+  DEGRADED = 1;  // repond, mais mal (latence anormale)
+  DOWN     = 2;  // ne repond plus (produit par la sonde, jamais par le service lui-meme)
+}
+
+message HealthReq  { string serviceName = 1; }
+message HealthResp {
+  Status status     = 1;
+  int64  uptimeMs   = 2;
+  double cpuLoad    = 3;  // charge CPU du processus, entre 0 et 1
+  string instanceId = 4;
+}
+
+// --- Service de calcul ---
+service CalcService {
+  rpc Compute(CalcRequest) returns (CalcResponse);
+  rpc HealthCheck(HealthReq) returns (HealthResp);
+}
+message CalcRequest  { double a = 1; double b = 2; string op = 3; }
+message CalcResponse { double result = 1; int64 latencyMs = 2; }
+
+// --- Service de stockage cle/valeur (defini par l'equipe) ---
+service StorageService {
+  rpc Put(PutReq) returns (PutResp);
+  rpc Get(GetReq) returns (GetResp);
+  rpc HealthCheck(HealthReq) returns (HealthResp);
+}
+message PutReq  { string key = 1; string value = 2; }
+message PutResp { bool ok = 1; }
+message GetReq  { string key = 1; }
+message GetResp { bool found = 1; string value = 2; }
+
+// --- Service de notification ---
+service NotifService {
+  rpc Notify(NotifRequest) returns (NotifResponse);
+  rpc HealthCheck(HealthReq) returns (HealthResp);
+}
+message NotifRequest  { string event = 1; string payload = 2; }
+message NotifResponse { bool accepted = 1; }
+
+// --- Administration / injection de fautes (tests de chaos, tableau de bord) ---
+// Present sur chaque service. latencyMs > 0 ajoute un delai a TOUS les appels
+// (HealthCheck inclus) ; cpuLoad > 0 force la charge CPU rapportee ; clear remet a zero.
+service AdminService {
+  rpc Inject(FaultReq) returns (FaultResp);
+}
+message FaultReq  { int64 latencyMs = 1; double cpuLoad = 2; bool clear = 3; }
+message FaultResp { bool ok = 1; }
+
