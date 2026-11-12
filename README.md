@@ -549,5 +549,3 @@ Cette section détaille le scénario d'évaluation en **5 étapes chronométrée
 | **Rapport PDF** (Architecture, protocole de test, résultats mesurés, analyse) | **15 pts** | ✅ Rapport LaTeX de 11 pages (`report/rapport.pdf`) avec schémas d'architecture, tableaux statistiques $N=40$, encadrés d'analyse critique et bibliographie. |
 | **Démonstration** (Scénarios d'injection de pannes + guérison automatique en direct) | **10 pts** | ✅ Super Dashboard Web temps réel (`:8088`), conducteur de démo en 5 étapes et laboratoire Chaos 1-clic. |
 | **TOTAL** | **100 / 100** | **27/27 tests JUnit 5 passants — 40/40 essais expérimentaux validés** |
-#   a u t o n o m i c m e s h  
- 
